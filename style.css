@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Simple, modern, responsive styling */
 :root{
   --bg: #f7fbff;
@@ -114,3 +115,57 @@ body{
 }
 
 
+=======
+/* DevOps & Cloud Theme Styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #38bdf8; /* Cyan - Cloud/Tech */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #06b6d4, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+
+>>>>>>> cb26148 (Added portfolio landing page with DevOps theme)
