@@ -1,15 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First GitHub Pages Site</title>
-    <!-- Linking CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaurav Kumar — Portfolio</title>
+  <meta name="description" content="Portfolio of Gaurav Kumar — Aspiring DevOps & Cloud Engineer." />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World! 🌍</h1>
-    <p>This is my first static website hosted on GitHub Pages!</p>
-    <button>Click Me</button>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Gaurav Kumar</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hello — I'm <span class="highlight">Gaurav Kumar</span></h2>
+        <p class="lead">Aspiring DevOps and Cloud Engineer learning CI/CD, Docker, and Kubernetes</p>
+        <a class="cta" href="#projects">See my work</a>
+        <a class="cta" href="https://github.com/gauravkumare3e/my-static-site/raw/main/resume.pdf" target="_blank">Download Resume</a>
+      </div>
+    </section>
+
+    <section id="about" class="container card">
+      <h3>About me</h3>
+      <p>I am passionate about automation, cloud infrastructure, and modern DevOps practices. Currently focusing on mastering CI/CD pipelines, Docker, Kubernetes, and cloud services to build scalable and reliable systems.</p>
+    </section>
+
+    <section id="projects" class="container cards-grid">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="project">
+          <h4>CI/CD Pipeline with GitHub Actions</h4>
+          <p>Automated build and deployment process using GitHub Actions, Docker, and Node.js.</p>
+          <a href="https://github.com/gauravkumare3e/ci-cd-github-actions" class="small-btn" target="_blank">View Repo</a>
+        </article>
+        <article class="project">
+          <h4>Static Website on GitHub Pages</h4>
+          <p>Hosted a responsive HTML & CSS portfolio using GitHub Pages.</p>
+          <a href="https://github.com/gauravkumare3e/my-static-site" class="small-btn" target="_blank">View Repo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:gauravk5732@gmail.com">gauravk5732@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/gauravkumare3e" target="_blank">github.com/gauravkumare3e</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/gaurav-kumarmw/" target="_blank">linkedin.com/in/gaurav-kumarmw</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Gaurav Kumar • Hosted on GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script>
+    // auto update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
