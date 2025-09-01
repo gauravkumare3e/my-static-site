@@ -20,11 +20,12 @@ cd my-static-site
 
 # Open the index.html file in your browser
 📂 Repository Structure
-csharp
-Copy code
+
 my-static-site/
 │── index.html    # Main webpage
+
 │── style.css     # Styling
+
 │── README.md     # Project documentation
 
 🛠️ Tech Stack
