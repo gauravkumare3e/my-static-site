@@ -39,4 +39,4 @@ Gaurav Kumar
 💡 Aspiring DevOps and Cloud Engineer | Learning CI/CD, Docker, Kubernetes
 
 📧 Email: gauravk5732@gmail.com
-🔗 GitHub | LinkedIn
+
