@@ -5,6 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaurav Kumar | DevOps & Cloud Engineer</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra CSS for badges */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .badge {
+      background: #007bff;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .badge:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    /* Project cards */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .project-card p {
+      color: #555;
+    }
+    .project-card a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
@@ -22,27 +72,55 @@
   <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>AWS ☁️</li>
-      <li>Docker 🐳</li>
-      <li>Kubernetes ☸️</li>
-      <li>Jenkins ⚙️</li>
-      <li>Terraform 📦</li>
-      <li>GitHub Actions 🚀</li>
-      <li>Linux 🐧</li>
-      <li>C 💻</li>
-      <li>Flask 🐍</li>
-    </ul>
+    <div class="skills-container">
+      <span class="badge">AWS ☁️</span>
+      <span class="badge">Docker 🐳</span>
+      <span class="badge">Kubernetes ☸️</span>
+      <span class="badge">Jenkins ⚙️</span>
+      <span class="badge">Terraform 📦</span>
+      <span class="badge">GitHub Actions 🚀</span>
+      <span class="badge">Linux 🐧</span>
+      <span class="badge">C 💻</span>
+      <span class="badge">Flask 🐍</span>
+    </div>
   </section>
 
   <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
-    <p>✅ <a href="https://github.com/gauravkumare3e/incident-management">Incident Management</a></p>
-    <p>✅ <a href="https://github.com/gauravkumare3e/netdata-monitoring">Netdata Monitoring</a></p>
-    <p>✅ <a href="https://github.com/gauravkumare3e/hello-java-maven">Java Maven Project</a></p>
-    <p>✅ <a href="https://github.com/gauravkumare3e/devops-git-project">DevOps Git Project</a></p>
-    <p>✅ <a href="https://github.com/gauravkumare3e/k8s-demo">Kubernetes Demo</a></p>
+    <div class="projects-container">
+      
+      <div class="project-card">
+        <h3>Incident Management System</h3>
+        <p>Built an incident tracking system using Flask & Git, demonstrating monitoring and alert handling workflow.</p>
+        <a href="https://github.com/gauravkumare3e/incident-management" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>System Resource Monitoring</h3>
+        <p>Deployed Netdata in Docker to monitor CPU, memory, disk, and network usage in real-time.</p>
+        <a href="https://github.com/gauravkumare3e/netdata-monitoring" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Java Maven CI/CD Pipeline</h3>
+        <p>Created a Jenkins pipeline to automate build, test, and deploy for a Java Maven application.</p>
+        <a href="https://github.com/gauravkumare3e/hello-java-maven" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>DevOps Git Workflow Project</h3>
+        <p>Practiced Git branching, merging, and pull request workflow with a complete GitHub project.</p>
+        <a href="https://github.com/gauravkumare3e/devops-git-project" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Kubernetes Nginx Demo</h3>
+        <p>Deployed an Nginx web app on Kubernetes using Minikube, showcasing pods, services, and deployments.</p>
+        <a href="https://github.com/gauravkumare3e/k8s-demo" target="_blank">🔗 View Project</a>
+      </div>
+
+    </div>
   </section>
 
   <!-- Contact -->
