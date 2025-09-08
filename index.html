@@ -3,245 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaurav Kumar | DevOps & Cloud Engineer</title>
+  <title>Gaurav Kumar - Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <!-- FontAwesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #000000;
-      --card-bg: #f9f9f9;
-      --badge-bg: #007bff;
-      --badge-hover: #0056b3;
-      --link-color: #007bff;
-      --link-hover: #0056b3;
-    }
-
-    body.dark {
-      --bg-color: #1e1e1e;
-      --text-color: #f1f1f1;
-      --card-bg: #2c2c2c;
-      --badge-bg: #28a745;
-      --badge-hover: #1e7e34;
-      --link-color: #1e90ff;
-      --link-hover: #63b3ed;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    header, section, footer {
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* Toggle button */
-    .toggle-btn {
-      position: fixed;
-      top: 15px;
-      right: 20px;
-      background: var(--badge-bg);
-      color: #fff;
-      border: none;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      font-size: 20px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .toggle-btn:hover {
-      background: var(--badge-hover);
-    }
-
-    /* Skills badges */
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .badge {
-      background: var(--badge-bg);
-      color: white;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 14px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .badge:hover {
-      background: var(--badge-hover);
-      transform: scale(1.05);
-    }
-
-    /* Project cards */
-    .projects-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .project-card {
-      background: var(--card-bg);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s, background 0.3s;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    .project-card h3 {
-      margin-top: 0;
-      color: var(--text-color);
-    }
-    .project-card p {
-      color: var(--text-color);
-    }
-    .project-card a {
-      text-decoration: none;
-      color: var(--link-color);
-      font-weight: bold;
-    }
-    .project-card a:hover {
-      color: var(--link-hover);
-    }
-
-    /* Contact section */
-    .contact-icons {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .contact-icons a {
-      font-size: 28px;
-      color: var(--link-color);
-      transition: 0.3s;
-    }
-    .contact-icons a:hover {
-      color: var(--link-hover);
-      transform: scale(1.2);
-    }
-
-    footer {
-      background: var(--card-bg);
-      padding: 15px;
-      margin-top: 20px;
-    }
-  </style>
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Dark Mode Toggle Button -->
-  <button class="toggle-btn" onclick="toggleDarkMode()">
-    <i id="theme-icon" class="fas fa-moon"></i>
-  </button>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#about" class="logo">Gaurav Kumar</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </div>
+  </nav>
 
-  <header>
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section">
     <h1>👋 Hi, I'm Gaurav Kumar</h1>
-    <p>Aspiring DevOps & Cloud Engineer | Passionate about CI/CD, Cloud & Automation</p>
-  </header>
-
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an aspiring DevOps & Cloud Engineer with hands-on experience in AWS, CI/CD pipelines, and automation tools. I enjoy solving problems and building scalable systems.</p>
+    <p>Aspiring <b>DevOps & Cloud Engineer</b> passionate about automation, CI/CD, and scalable infrastructure.</p>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <span class="badge">AWS ☁️</span>
-      <span class="badge">Docker 🐳</span>
-      <span class="badge">Kubernetes ☸️</span>
-      <span class="badge">Jenkins ⚙️</span>
-      <span class="badge">Terraform 📦</span>
-      <span class="badge">GitHub Actions 🚀</span>
-      <span class="badge">Linux 🐧</span>
-      <span class="badge">C 💻</span>
-      <span class="badge">Flask 🐍</span>
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="section">
+    <h2>⚡ Skills</h2>
+    <div class="skills">
+      <span class="badge">Linux</span>
+      <span class="badge">Git & GitHub</span>
+      <span class="badge">Docker</span>
+      <span class="badge">Kubernetes</span>
+      <span class="badge">Jenkins</span>
+      <span class="badge">Terraform</span>
+      <span class="badge">AWS</span>
+      <span class="badge">CI/CD</span>
+      <span class="badge">Python</span>
+      <span class="badge">Flask</span>
+      <span class="badge">C</span>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Incident Management System</h3>
-        <p>Built an incident tracking system using Flask & Git, demonstrating monitoring and alert handling workflow.</p>
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="section">
+    <h2>🚀 Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <h3>Incident Management</h3>
+        <p>Automated issue tracking and incident reporting system.</p>
         <a href="https://github.com/gauravkumare3e/incident-management" target="_blank">🔗 View Project</a>
       </div>
-      <div class="project-card">
-        <h3>System Resource Monitoring</h3>
-        <p>Deployed Netdata in Docker to monitor CPU, memory, disk, and network usage in real-time.</p>
+
+      <div class="card">
+        <h3>Netdata Monitoring</h3>
+        <p>Real-time system resource monitoring with Docker.</p>
         <a href="https://github.com/gauravkumare3e/netdata-monitoring" target="_blank">🔗 View Project</a>
       </div>
-      <div class="project-card">
-        <h3>Java Maven CI/CD Pipeline</h3>
-        <p>Created a Jenkins pipeline to automate build, test, and deploy for a Java Maven application.</p>
+
+      <div class="card">
+        <h3>Hello Java Maven</h3>
+        <p>Simple Java Maven CI/CD pipeline with Jenkins.</p>
         <a href="https://github.com/gauravkumare3e/hello-java-maven" target="_blank">🔗 View Project</a>
       </div>
-      <div class="project-card">
-        <h3>DevOps Git Workflow Project</h3>
-        <p>Practiced Git branching, merging, and pull request workflow with a complete GitHub project.</p>
+
+      <div class="card">
+        <h3>DevOps Git Project</h3>
+        <p>Hands-on Git workflow demonstration with branching.</p>
         <a href="https://github.com/gauravkumare3e/devops-git-project" target="_blank">🔗 View Project</a>
       </div>
-      <div class="project-card">
-        <h3>Kubernetes Nginx Demo</h3>
-        <p>Deployed an Nginx web app on Kubernetes using Minikube, showcasing pods, services, and deployments.</p>
+
+      <div class="card">
+        <h3>Kubernetes Demo</h3>
+        <p>Deploying an Nginx app using Kubernetes + Minikube.</p>
         <a href="https://github.com/gauravkumare3e/k8s-demo" target="_blank">🔗 View Project</a>
       </div>
-      <div class="project-card">
+
+      <div class="card">
         <h3>Node.js CI/CD App</h3>
-        <p>Built a Node.js application and automated deployment using GitHub Actions CI/CD pipeline.</p>
+        <p>CI/CD pipeline with GitHub Actions & Docker for Node.js app.</p>
         <a href="https://github.com/gauravkumare3e/nodejs-ci-cd-app" target="_blank">🔗 View Project</a>
       </div>
-      <div class="project-card">
+
+      <div class="card">
         <h3>Terraform Docker Demo</h3>
-        <p>Provisioned Docker containers using Terraform, demonstrating Infrastructure as Code (IaC).</p>
+        <p>Infrastructure as Code using Terraform with Docker provider.</p>
         <a href="https://github.com/gauravkumare3e/terraform-docker-demo" target="_blank">🔗 View Project</a>
       </div>
+
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section">
+    <h2>📬 Contact</h2>
+    <p>Let’s connect!</p>
     <div class="contact-icons">
-      <a href="mailto:gauravk5732@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="tel:+917988354889" title="Phone"><i class="fas fa-phone"></i></a>
-      <a href="https://www.linkedin.com/in/gaurav-kumarmw" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/gauravkumare3e" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:gauravk5732@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/gaurav-kumarmw" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/gauravkumare3e" target="_blank">💻 GitHub</a>
+      <a href="tel:+917988354889">📞 Call</a>
     </div>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer>
-    <p>© 2025 Gaurav Kumar | Built with ❤️ using HTML & CSS</p>
+    <p>© 2025 Gaurav Kumar | DevOps & Cloud Engineer Portfolio</p>
   </footer>
 
+  <!-- ===== Scripts ===== -->
   <script>
-    function toggleDarkMode() {
-      const body = document.body;
-      const icon = document.getElementById("theme-icon");
-      body.classList.toggle("dark");
-      if (body.classList.contains("dark")) {
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
-      } else {
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
-      }
-    }
+    // Mobile menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById("theme-toggle");
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      themeToggle.textContent =
+        document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
   </script>
 
 </body>
