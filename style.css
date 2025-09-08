@@ -4,6 +4,7 @@
   --text-color: #333333;
   --card-bg: #f9f9f9;
   --link-color: #007bff;
+  --hero-bg: linear-gradient(135deg, #007bff, #00c6ff);
 }
 
 .dark-mode {
@@ -11,6 +12,7 @@
   --text-color: #e0e0e0;
   --card-bg: #1e1e1e;
   --link-color: #4da3ff;
+  --hero-bg: linear-gradient(135deg, #1e1e1e, #2c2c2c);
 }
 
 /* ===== Global ===== */
@@ -83,6 +85,38 @@ section {
   background: #0056b3;
 }
 
+/* ===== Hero Section ===== */
+#hero {
+  background: var(--hero-bg);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.hero-content .highlight {
+  color: yellow;
+}
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.hero-btn {
+  background: white;
+  color: #007bff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+.hero-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
 /* ===== Skills ===== */
 .skills-list span {
   display: inline-block;
@@ -125,6 +159,7 @@ section {
 #contact a:hover {
   text-decoration: underline;
 }
+
 
 
 
