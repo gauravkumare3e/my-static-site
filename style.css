@@ -159,16 +159,38 @@ section {
 #contact a:hover {
   text-decoration: underline;
 }
-/* ===== Profile Picture in Hero ===== */
+/* Responsive Circular Profile Picture */
 .profile-pic {
-  width: 140px;
+  width: 140px;             /* default size */
   height: 140px;
-  border-radius: 50%;
+  border-radius: 50%;       /* makes it circular */
   border: 4px solid white;
   margin-bottom: 20px;
-  object-fit: cover;
+  object-fit: cover;        /* ensures the image fills nicely */
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
 }
+
+/* On hover, zoom a little */
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive sizes */
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 
 
 
